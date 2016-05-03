@@ -38,6 +38,8 @@ arr.sample(3);
 
 The sample function would choose a random element, or the random `n` elements, from the array. If the array is empty, the first form returns `nil`, and the second form returns an empty array.
 
+## Use Cases
+
 ## FAQs
 
 ### Why `sample` instead of `random`?
