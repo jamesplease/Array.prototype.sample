@@ -40,6 +40,17 @@ The sample function would choose a random element, or the random `n` elements, f
 
 ## Use Cases
 
+1. Educational Materials
+
+  The original motivating use case for the proposed `sample` method
+  was for the use in educational materials.
+
+  It is often extremely motivating to teach a student to learn
+  programming by teaching them to build a game. In order to make the
+  game "game-like" it is extremely useful to introduce an element
+  of randomness. Because JavaScript lacks this method I would often
+  provide a naive implementation to students for them to use.
+
 ## FAQs
 
 ### Why `sample` instead of `random`?
