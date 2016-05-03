@@ -36,7 +36,16 @@ arr.sample(3);
 
 ```
 
-The sample function would choose a random element, or the random `n` elements, from the array. If the array is empty, the first form returns `nil`, and the second form returns an empty array.
+The sample function always returns a new array. This is both for API consistency
+and to enable safely chaining array methods, as in the following example:
+
+```js
+arr.sample(3).map(n => 2 * n);
+```
+
+If the input array is empty, then a new empty array is returned. If an argument of `n` is provided,
+then a new array containing `n` randomly-selected elements is returned. Lastly, if no arguments
+are provided, then it is treated as if a value of `1` was provided.
 
 ## FAQs
 
